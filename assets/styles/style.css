@@ -5,21 +5,36 @@
 .battlefield {
 	outline: 2px solid black;
 	display: grid;
-	grid-template-columns: repeat(11, 40px);
-	grid-template-rows: repeat(11, 40px);
-}
-
-.grid-layer > div {
-	outline: 1px solid black
+	grid-template-columns: repeat(11, 50px);
+	grid-template-rows: repeat(11, 50px);
+	width: max-content;
 }
 
 .corner-cell {
 	background-color: black;
 	grid-area: 1 / 1;
 }
+ .letter-header {
+	display: grid;
+	grid-row: 1;
+	grid-column: 2 / span 10;
+	grid-template-columns: repeat(10, 50px);
+ }
 
-.letter-header, .number-header {
+ .number-header {
+	display: grid;
+	grid-column: 1;
+	grid-row: 2 / span 10;
+	grid-template-rows: repeat(10, 50px);
+ }
+
+ .cell {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	outline: 1px solid black;
+ }
+
+.number-header {
+	grid-column: 1;
 }
