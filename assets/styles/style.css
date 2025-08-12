@@ -47,7 +47,7 @@
 
 .ship {
 	outline: 3px solid black;
-	margin: 6px;
+	margin: 5px;
 }
 
 .ship:nth-last-child(1) {
