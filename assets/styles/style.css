@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+.battlefield {
+	outline: 2px solid black;
+	display: grid;
+	grid-template-columns: repeat(11, 40px);
+	grid-template-rows: repeat(11, 40px);
+}
+
+.grid-layer > div {
+	outline: 1px solid black
+}
+
+.corner-cell {
+	background-color: black;
+	grid-area: 1 / 1;
+}
+
+.letter-header, .number-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
